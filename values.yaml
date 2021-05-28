@@ -6,11 +6,11 @@ replicaCount: 6
 
 redis:
   enabledAppendonly: yes
-  # Redis服务断开
+  # Redis服务端口
   port: 6379
 
 image:
-  repository: nsfocus.cri.io:5000/redis
+  repository: redis
   pullPolicy: IfNotPresent
   tag: "6.2.3"
 
